@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<?php \$${1}_cache = start_page_cache( '${1}' ); ?>
+  ${0}
+<?php end_page_cache( \$${1}_cache ); ?>
+]]></content>
+  <tabTrigger>pc</tabTrigger>
+  <scope>text.html</scope>
+</snippet>

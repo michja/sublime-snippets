@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+/******************************
+        ${1}             
+*******************************/
+
+]]></content>
+  <tabTrigger>sec</tabTrigger>
+  <scope>source.php,source.tsx</scope>
+</snippet>
