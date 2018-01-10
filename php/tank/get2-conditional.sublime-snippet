@@ -1,7 +1,7 @@
 <snippet>
   <content><![CDATA[
 <?php \$${1:As} = tank_get2( "${2:article}", "order by ordering asc" ); \$${1:As}->show_select(); ?>
-<?php if ( sizeof( \$As ) ) :
+<?php if ( sizeof( \$As ) ) : ?>
   <?php foreach (\$${1:As}->arts as \$${3:key}${4: => \$${5:value}}) : ?>
     ${0}
   <?php endforeach; ?>
