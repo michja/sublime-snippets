@@ -1,0 +1,24 @@
+<snippet>
+  <content><![CDATA[
+<?php
+\$article_type = "${1}";
+define('${2}', mysql_get_value("select name from page where template='${3}'"));
+
+if ( !G( 's' ) || !blog_id( G( 's' ), $article_type ) ) {
+  header( "Location: " . SITEROOT . '/' . ${2} );
+  die();
+}
+
+\$C = new Article( $article_type, blog_id( G( 's' ), \$article_type ) );
+\$GLOBALS['P']->main_art = \$C;
+
+require 'partials/header.php';
+
+${0}
+
+require 'partials/footer.php';
+
+]]></content>
+  <tabTrigger>da</tabTrigger>
+  <scope>text.html</scope>
+</snippet>

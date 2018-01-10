@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+<?php if ( \$${1:A} ) : ?>
+  ${0}
+<?php endif; ?>
+]]></content>
+  <tabTrigger>pif</tabTrigger>
+  <scope>text.html</scope>
+</snippet>

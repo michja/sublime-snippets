@@ -1,0 +1,25 @@
+<snippet>
+  <content><![CDATA[
+<?php 
+
+function ${1}( \$args=[] ) {
+
+  \$args += [
+    '${2:arg}' => null,
+    ${3}
+    'edit' => null,
+  ];
+
+  extract( \$args );
+
+  if ( \$${2:arg} || \$edit ) : ?>
+    <section class='${4}'>
+      ${0}      
+    </section> <!-- .${4} -->
+  <?php endif;
+
+}
+]]></content>
+  <tabTrigger>nf</tabTrigger>
+  <scope>text.html</scope>
+</snippet>

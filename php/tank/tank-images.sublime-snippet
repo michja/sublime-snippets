@@ -1,0 +1,12 @@
+<snippet>
+  <content><![CDATA[
+<?php \$${1:As} = tank_images( "${2:image}" ); ?>
+<?php if ( sizeof( \$${1:As} ) ) : ?>
+	<?php foreach (\$${1:As} as \$${3:key}${4: => \$${5:value}}) : ?>
+	  ${0}
+	<?php endforeach; ?>
+<?php endif; ?>
+]]></content>
+  <tabTrigger>ti</tabTrigger>
+  <scope>text.html</scope>
+</snippet>
